@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-// import './index.css';
-import "tailwindcss/tailwind.css"
+import './index.css';
 import Activity from './Activity';
 
 function App() {
