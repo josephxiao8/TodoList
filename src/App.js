@@ -10,7 +10,7 @@ const reducer = (state, action) => {
         )
     }
     else if(action.type==='remove'){
-        const newTodo = state.todo.filter((entry)=>entry.id!=action.id);
+        const newTodo = state.todo.filter((entry)=>entry.id!==action.id);
         return (
             {todo: newTodo, cnt: state.cnt}
         )
