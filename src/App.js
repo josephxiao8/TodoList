@@ -7,8 +7,8 @@ function App() {
     const [todo, setTodo] = useState([]); //maintains a list of entries in the todo list
     const [cnt, setCnt] = useState(0); //to generate a new value for the key attribute in elements in 'todo'
     const [entryText, setEntryText] = useState(''); //maintains the text inside the form for new entries
-    const [showForm, setShowForm] = useState(false);
-    const [showColorOptions, setShowColorOptions] = useState(false);
+    const [showForm, setShowForm] = useState(false); //true-show form, false-hide form
+    const [showColorOptions, setShowColorOptions] = useState(false); //true-show popup, false-hide pop-up
 
     //adds new element to 'todo'
     const add = (event) => { 
