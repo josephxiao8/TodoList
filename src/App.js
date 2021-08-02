@@ -128,7 +128,7 @@ function App({ activeLists, setActiveLists }) {
             Instructions: Click entry to remove from list
           </div>
         </div>
-        <div className="space-y-8">
+        <div className={`space-y-8 bg-${state.color}`}>
           {state.todo.map((activity) => {
             return (
               <Entry
