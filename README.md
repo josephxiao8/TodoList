@@ -1,8 +1,8 @@
 # TodoList
 
-A simple Todo-List app.
+A simple todo-list app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The UI was designed with [React.js](https://reactjs.org/) and styled with [Tailwind CSS](https://tailwindcss.com/). You can try it out [here](https://todolistio.netlify.app/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The UI was designed with [React.js](https://reactjs.org/) and styled with [Tailwind CSS](https://tailwindcss.com/). Routing was handled with [React Router](https://reactrouter.com/). You can try the app [here](https://todolistio.netlify.app/).
 
 
 <img src="./images/image1.png"/>
