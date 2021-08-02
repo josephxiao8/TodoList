@@ -14,7 +14,7 @@ const Home = ({ activeListGrid, setActiveListGrid }) => {
 
   useEffect(() => {
     setActiveListGrid(lists);
-  }, [lists, setActiveListGrid]);
+  }, [lists]);
 
   //creates a new 'list' component
   const createNewList = (e) => {

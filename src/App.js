@@ -48,7 +48,7 @@ function App({ activeLists, setActiveLists }) {
       ...activeLists.filter((list) => list.id !== parseInt(id)),
       { id: parseInt(id), todoListState: state },
     ]);
-  }, [state, setActiveLists]);
+  }, [state]);
 
   const [entryText, setEntryText] = useState(""); //maintains the text inside the form for new entries
   const [showForm, setShowForm] = useState(false); //true-show form, false-hide form
