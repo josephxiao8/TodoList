@@ -120,7 +120,7 @@ function App({ activeLists, setActiveLists }) {
 
       {/* todo-list */}
       <div
-        className={`w-3/6 h-auto mx-auto my-8 p-12 rounded-lg bg-${state.color}-50 shadow`}
+        className={`w-3/6 h-auto mx-auto my-8 p-12 rounded-lg bg-${state.color}-50 shadow-lg`}
       >
         <div className="mx-auto">
           <div className="py-3">Todo List</div>
@@ -128,7 +128,7 @@ function App({ activeLists, setActiveLists }) {
             Instructions: Click entry to remove from list
           </div>
         </div>
-        <div className={`space-y-8 bg-${state.color}`}>
+        <div className="space-y-8">
           {state.todo.map((activity) => {
             return (
               <Entry
@@ -174,13 +174,13 @@ function App({ activeLists, setActiveLists }) {
       {showForm && (
         <div>
           <form
-            className={`my-8 p-6 w-3/6 mx-auto bg-${state.color}-100 rounded-md shadow`}
+            className={`my-8 p-6 w-3/6 mx-auto bg-${state.color}-100 rounded-md shadow-lg`}
             onSubmit={add}
           >
             <label>
               New Entry:
               <textarea
-                className="w-full rounded-md p-8"
+                className="w-full rounded-md p-8 border-2 border-gray-300"
                 value={entryText}
                 onChange={(event) => setEntryText(event.target.value)}
               >
