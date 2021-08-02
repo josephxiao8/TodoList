@@ -40,7 +40,7 @@ function App({ activeLists, setActiveLists }) {
         dispatch({ type: "setDefault", value: activeLists[i].todoListState });
       }
     }
-  }, [activeLists, id]);
+  }, []);
 
   //updating activeLists as new entries are added
   useEffect(() => {
@@ -48,7 +48,7 @@ function App({ activeLists, setActiveLists }) {
       ...activeLists.filter((list) => list.id !== parseInt(id)),
       { id: parseInt(id), todoListState: state },
     ]);
-  }, [state, activeLists, setActiveLists, id]);
+  }, [state, setActiveLists]);
 
   const [entryText, setEntryText] = useState(""); //maintains the text inside the form for new entries
   const [showForm, setShowForm] = useState(false); //true-show form, false-hide form
