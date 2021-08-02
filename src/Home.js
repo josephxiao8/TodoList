@@ -10,7 +10,7 @@ const Home = ({ activeListGrid, setActiveListGrid }) => {
 
   useEffect(() => {
     setLists(activeListGrid);
-  }, []);
+  }, [activeListGrid]);
 
   useEffect(() => {
     setActiveListGrid(lists);

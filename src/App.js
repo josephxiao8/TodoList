@@ -35,14 +35,12 @@ function App({ activeLists, setActiveLists }) {
   //setting deafult state for reducer
   const { id } = useParams();
   useEffect(() => {
-    let found = false;
     for (let i = 0; i < activeLists.length; i++) {
       if (activeLists[i].id === parseInt(id)) {
-        found = true;
         dispatch({ type: "setDefault", value: activeLists[i].todoListState });
       }
     }
-  }, []);
+  }, [activeLists, id]);
 
   //updating activeLists as new entries are added
   useEffect(() => {
@@ -50,7 +48,7 @@ function App({ activeLists, setActiveLists }) {
       ...activeLists.filter((list) => list.id !== parseInt(id)),
       { id: parseInt(id), todoListState: state },
     ]);
-  }, [state, setActiveLists]);
+  }, [state, activeLists, setActiveLists, id]);
 
   const [entryText, setEntryText] = useState(""); //maintains the text inside the form for new entries
   const [showForm, setShowForm] = useState(false); //true-show form, false-hide form
