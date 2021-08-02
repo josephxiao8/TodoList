@@ -120,7 +120,7 @@ function App({ activeLists, setActiveLists }) {
 
       {/* todo-list */}
       <div
-        className={`w-3/6 h-auto mx-auto my-8 p-12 rounded-lg bg-${state.color}-50 shadow-lg`}
+        className={`w-3/6 h-auto mx-auto my-8 p-12 rounded-lg bg-${state.color}-50 shadow-lg border-2 border-gray-100`}
       >
         <div className="mx-auto">
           <div className="py-3">Todo List</div>
@@ -174,13 +174,13 @@ function App({ activeLists, setActiveLists }) {
       {showForm && (
         <div>
           <form
-            className={`my-8 p-6 w-3/6 mx-auto bg-${state.color}-100 rounded-md shadow-lg`}
+            className={`my-8 p-6 w-3/6 mx-auto bg-${state.color}-100 rounded-md shadow-lg border-2 border-gray-100`}
             onSubmit={add}
           >
             <label>
               New Entry:
               <textarea
-                className="w-full rounded-md p-8 border-2 border-gray-300"
+                className="w-full rounded-md p-8 border-2 border-gray-200"
                 value={entryText}
                 onChange={(event) => setEntryText(event.target.value)}
               >
@@ -189,7 +189,7 @@ function App({ activeLists, setActiveLists }) {
             </label>
             <button
               type="submit"
-              className={`p-2 mt-2 rounded-md bg-${state.color}-300 transform hover:bg-${state.color}-400`}
+              className={`p-2 mt-2 rounded-md bg-${state.color}-300 transform hover:bg-${state.color}-400 border-2 border-gray-200`}
             >
               Submit
             </button>
