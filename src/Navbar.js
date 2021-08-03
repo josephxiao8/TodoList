@@ -6,7 +6,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Link to="/">
-      <img src={logo} alt="logo" className="block w-28 mx-auto mt-8"></img>;
+      <img
+        src={logo}
+        title="go back to dashboard"
+        alt="logo"
+        className="block w-28 mx-auto mt-8"
+      ></img>
+      ;
     </Link>
   );
 };
